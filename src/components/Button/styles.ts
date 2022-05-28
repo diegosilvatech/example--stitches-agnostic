@@ -10,7 +10,7 @@ export const button = css({
   transform: 'translateY(-50%)',
 
   padding: '$0 $2',
-  borderRadius: '$0',
+  borderRadius: '$2',
   height: 120,
   width: '100%',
 
