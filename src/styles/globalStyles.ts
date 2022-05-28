@@ -7,6 +7,10 @@ export const globalStyles = globalCss({
   },
   body: {
     backgroundColor: '$background',
-    color: '$text'
+    color: '$text',
+    fontFamily: "'Poppins', sans-serif"
+  },
+  button: {
+    fontFamily: "'Poppins', sans-serif"
   }
 });

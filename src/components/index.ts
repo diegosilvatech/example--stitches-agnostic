@@ -1,3 +1,4 @@
+import Container from './Container';
 import Button from './Button';
 
-export { Button };
+export { Container, Button };
