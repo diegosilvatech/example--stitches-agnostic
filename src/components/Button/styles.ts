@@ -5,12 +5,17 @@ export const button = css({
   backgroundColor: '$blue9',
   border: '2px solid $blue9',
 
+  position: 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+
   padding: '$0 $2',
   borderRadius: '$0',
   height: 120,
   width: '100%',
 
-  fontWeight: 600,
+  fontWeight: 700,
+  fontSize: '$4',
 
   '&:hover': {
     cursor: 'pointer',

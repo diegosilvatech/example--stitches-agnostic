@@ -1,13 +1,24 @@
-import { blue, blueDark } from '@radix-ui/colors';
+import {
+  blue,
+  blueDark,
+  slate,
+  slateDark,
+  sage,
+  sageDark
+} from '@radix-ui/colors';
 
-export const lightColors = {
+export const neonColors = {
   text: 'black',
   background: 'white',
-  ...blue
+  ...blue,
+  ...slate,
+  ...sage
 };
 
 export const darkColors = {
   text: 'white',
   background: 'black',
-  ...blueDark
+  ...blueDark,
+  ...slateDark,
+  ...sageDark
 };

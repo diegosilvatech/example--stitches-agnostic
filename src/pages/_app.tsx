@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
-      value={{ light: 'light', dark: darkTheme.className }}
+      defaultTheme="neon"
+      value={{ neon: 'neon', dark: darkTheme.className }}
     >
       <Component {...pageProps} />
     </ThemeProvider>

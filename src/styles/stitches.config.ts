@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/core';
-import { lightColors, darkColors } from 'styles/colors';
+import { neonColors, darkColors } from 'styles/colors';
 
 export const {
   css,
@@ -12,7 +12,7 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...lightColors
+      ...neonColors
     },
     space: {
       0: '4px',
@@ -26,6 +26,14 @@ export const {
       0: '4px',
       1: '8px',
       rounded: '999px'
+    },
+    fontSizes: {
+      1: '16px',
+      2: '18px',
+      3: '24px',
+      4: '32px',
+      5: '40px',
+      6: '48px'
     },
     transitions: {
       default: '.3s ease',
