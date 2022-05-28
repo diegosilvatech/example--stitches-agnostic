@@ -2,20 +2,17 @@ import { css } from 'styles/stitches.config';
 
 export const main = css({
   height: '100vh',
-  position: 'relative'
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
 });
 
-export const inputsWrapper = css({
-  marginTop: '$10',
-  display: 'flex',
-  justifyContent: 'space-between'
-});
+export const section = css({});
 
 export const title = css({
   color: '$textHighContrast',
   fontSize: '$5',
-  textAlign: 'center',
-  marginTop: '$10'
+  textAlign: 'center'
 });
 
 export const subtitle = css({
@@ -23,11 +20,18 @@ export const subtitle = css({
   fontSize: '$2',
   fontWeight: 300,
   textAlign: 'center',
-  marginTop: '$2'
+  marginTop: '$1',
+  marginBottom: '$10'
+});
+
+export const inputsWrapper = css({
+  marginTop: '$5',
+  display: 'flex',
+  justifyContent: 'space-between'
 });
 
 export const buttonWrapper = css({
-  marginTop: '$10',
+  marginTop: '$5',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center'
