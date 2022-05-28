@@ -17,6 +17,8 @@ export const button = css({
   fontWeight: 700,
   fontSize: '$4',
 
+  boxShadow: '$button',
+
   '&:hover': {
     cursor: 'pointer',
     color: 'white',

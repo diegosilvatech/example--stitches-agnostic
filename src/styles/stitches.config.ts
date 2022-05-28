@@ -14,6 +14,9 @@ export const {
     colors: {
       ...neonColors
     },
+    shadows: {
+      button: `0px 4px 40px $colors$buttonShadow`
+    },
     space: {
       0: '4px',
       1: '8px',
@@ -58,5 +61,8 @@ export const {
 export const darkTheme = createTheme({
   colors: {
     ...darkColors
+  },
+  shadows: {
+    button: `0px 4px 40px $colors$buttonShadow`
   }
 });
