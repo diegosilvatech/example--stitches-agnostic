@@ -12,6 +12,9 @@ type RadioProps = {
 } & InputHTMLAttributes<HTMLInputElement>;
 
 const Radio = ({ id, value, label, onCheck, ...rest }: RadioProps) => {
+  const onChange = () => {
+    !!onCheck && onCheck(value);
+  };
   return (
     <div className={s.inputWrapper()}>
       <input
@@ -19,6 +22,7 @@ const Radio = ({ id, value, label, onCheck, ...rest }: RadioProps) => {
         type="radio"
         id={id}
         value={value}
+        onChange={onChange}
         {...rest}
       />
       <label className={s.label()} htmlFor={id}>

@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/core';
-import { neonColors, darkColors } from 'styles/colors';
+import { neonColors, BiorcColors, LotusColors } from 'styles/colors';
 
 export const {
   css,
@@ -59,9 +59,19 @@ export const {
   }
 });
 
-export const darkTheme = createTheme({
+export const biorcTheme = createTheme({
   colors: {
-    ...darkColors
+    ...BiorcColors
+  },
+  shadows: {
+    button: '0px 4px 40px $colors$shadow',
+    input: '0px 0px 6px $colors$shadow'
+  }
+});
+
+export const lotusTheme = createTheme({
+  colors: {
+    ...LotusColors
   },
   shadows: {
     button: '0px 4px 40px $colors$shadow',

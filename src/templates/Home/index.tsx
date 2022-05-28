@@ -9,14 +9,20 @@ import * as s from './styles';
 const HomeTemplate = () => {
   const { theme = 'neon', setTheme } = useTheme();
   const toggleTheme = () => {
-    setTheme(theme === 'neon' ? 'dark' : 'neon');
+    if (theme === 'neon') {
+      setTheme('neon');
+    } else if (theme === 'biorc') {
+      setTheme('biorc');
+    } else {
+      setTheme('lotus');
+    }
   };
 
   return (
     <Container>
       <main className={s.main()}>
-        <h3 className={s.title()}>Example Stitches Agnostic</h3>
-        <p className={s.subtitle()}>Made with Stitches and Radix UI Colors</p>
+        <h3 className={s.title()}>Exemplo Stitches Agnostic</h3>
+        <p className={s.subtitle()}>Feito com Stitches e Radix UI Colors</p>
 
         <div className={s.inputsWrapper()}>
           {applicationThemes.map((theme) => (
@@ -26,10 +32,14 @@ const HomeTemplate = () => {
               id={theme.value}
               value={theme.value}
               label={theme.label}
+              onCheck={() => setTheme(theme.value)}
+              defaultChecked={theme.checked}
             />
           ))}
         </div>
-        <Button onClick={toggleTheme} />
+        <div className={s.buttonWrapper()}>
+          <Button onClick={toggleTheme} />
+        </div>
       </main>
     </Container>
   );

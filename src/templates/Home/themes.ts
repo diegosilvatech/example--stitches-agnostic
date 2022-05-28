@@ -1,18 +1,17 @@
 export const applicationThemes = [
   {
     value: 'neon',
-    label: 'Neon'
+    label: 'Neon',
+    checked: true
   },
   {
     value: 'biorc',
-    label: 'Biorc'
+    label: 'Biorc',
+    checked: false
   },
   {
-    value: 'magliano',
-    label: 'Magliano'
-  },
-  {
-    value: 'meiFacil',
-    label: 'MEI'
+    value: 'lotus',
+    label: 'Lotus',
+    checked: false
   }
 ];

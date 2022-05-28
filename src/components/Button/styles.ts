@@ -1,18 +1,15 @@
 import { css } from 'styles/stitches.config';
 
 export const button = css({
-  marginTop: '$5',
   color: '$white',
   backgroundColor: '$primary',
   border: '2px solid $primary',
 
-  padding: '$0 $2',
   borderRadius: '$2',
-  height: 120,
-  width: '100%',
+  padding: '$3 $10',
 
-  fontWeight: 700,
-  fontSize: '$4',
+  fontWeight: 400,
+  fontSize: '$3',
 
   boxShadow: '$button',
 

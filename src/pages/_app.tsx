@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 
 import { globalStyles } from 'styles/globalStyles';
-import { darkTheme } from 'styles/stitches.config';
+import { biorcTheme, lotusTheme } from 'styles/stitches.config';
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
@@ -10,7 +10,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider
       attribute="class"
       defaultTheme="neon"
-      value={{ neon: 'neon', dark: darkTheme.className }}
+      value={{
+        neon: 'neon',
+        biorc: biorcTheme.className,
+        lotus: lotusTheme.className
+      }}
     >
       <Component {...pageProps} />
     </ThemeProvider>

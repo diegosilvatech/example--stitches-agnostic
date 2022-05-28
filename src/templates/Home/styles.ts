@@ -25,3 +25,10 @@ export const subtitle = css({
   textAlign: 'center',
   marginTop: '$2'
 });
+
+export const buttonWrapper = css({
+  marginTop: '$10',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
+});
