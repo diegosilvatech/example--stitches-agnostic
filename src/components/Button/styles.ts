@@ -1,13 +1,13 @@
 import { css } from 'styles/stitches.config';
 
 export const button = css({
-  color: 'white',
-  backgroundColor: '$blue9',
-  border: '2px solid $blue9',
+  color: '$white',
+  backgroundColor: '$primary',
+  border: '2px solid $primary',
 
   position: 'absolute',
-  top: '50%',
-  transform: 'translateY(calc(-50% - 80px))',
+  top: '80%',
+  transform: 'translateY(calc(-80% - 80px))',
 
   padding: '$0 $2',
   borderRadius: '$2',
@@ -22,7 +22,7 @@ export const button = css({
   '&:hover': {
     cursor: 'pointer',
     color: 'white',
-    backgroundColor: '$blue10',
-    border: '2px solid $blue10'
+    backgroundColor: '$primaryHovered',
+    border: '2px solid $primaryHovered'
   }
 });

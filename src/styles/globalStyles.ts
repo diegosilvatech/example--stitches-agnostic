@@ -6,7 +6,7 @@ export const globalStyles = globalCss({
     padding: 0
   },
   body: {
-    backgroundColor: '$background',
+    backgroundColor: '$applicationBackground',
     color: '$text',
     fontFamily: "'Poppins', sans-serif"
   },

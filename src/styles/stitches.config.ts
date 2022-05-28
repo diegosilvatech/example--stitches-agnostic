@@ -15,7 +15,8 @@ export const {
       ...neonColors
     },
     shadows: {
-      button: `0px 4px 40px $colors$buttonShadow`
+      button: `0px 4px 40px $colors$shadow`,
+      input: '0px 0px 6px $colors$shadow'
     },
     space: {
       0: '4px',
@@ -63,6 +64,7 @@ export const darkTheme = createTheme({
     ...darkColors
   },
   shadows: {
-    button: `0px 4px 40px $colors$buttonShadow`
+    button: '0px 4px 40px $colors$shadow',
+    input: '0px 0px 6px $colors$shadow'
   }
 });

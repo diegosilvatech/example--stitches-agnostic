@@ -6,14 +6,14 @@ export const main = css({
 });
 
 export const title = css({
-  color: '$slate12',
+  color: '$textHighContrast',
   fontSize: '$5',
   textAlign: 'center',
   marginTop: '$10'
 });
 
 export const subtitle = css({
-  color: '$sage11',
+  color: '$textLowContrast',
   fontSize: '$2',
   fontWeight: 300,
   textAlign: 'center',
