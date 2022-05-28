@@ -1,9 +1,12 @@
 import { css } from 'styles/stitches.config';
 
 export const inputWrapper = css({
-  marginTop: '$10',
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  '& + div': {
+    marginLeft: '$0'
+  }
 });
 
 export const label = css({
