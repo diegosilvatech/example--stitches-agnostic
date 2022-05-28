@@ -11,15 +11,15 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      primary: 'black',
-      secondary: 'white'
+      text: 'black',
+      background: 'white'
     }
   }
 });
 
-export const dark = createTheme({
+export const darkTheme = createTheme({
   colors: {
-    primary: 'white',
-    secondary: 'black'
+    text: 'white',
+    background: 'black'
   }
 });

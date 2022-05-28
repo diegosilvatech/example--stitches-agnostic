@@ -6,7 +6,7 @@ export const globalStyles = globalCss({
     padding: 0
   },
   body: {
-    backgroundColor: '$primary',
-    color: '$secondary'
+    backgroundColor: '$background',
+    color: '$text'
   }
 });

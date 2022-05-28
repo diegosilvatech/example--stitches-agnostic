@@ -1,7 +1,15 @@
 import * as s from './styles';
 
-const Button = () => {
-  return <button className={s.button()}>button</button>;
+type ButtonProps = {
+  onClick?: () => void;
+};
+
+const Button = ({ onClick }: ButtonProps) => {
+  return (
+    <button className={s.button()} onClick={onClick}>
+      button
+    </button>
+  );
 };
 
 export default Button;
