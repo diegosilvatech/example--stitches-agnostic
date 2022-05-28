@@ -1,7 +1,7 @@
 import { css } from 'styles/stitches.config';
 
 export const inputWrapper = css({
-  marginTop: '$2',
+  marginTop: '$10',
   display: 'flex',
   alignItems: 'center'
 });

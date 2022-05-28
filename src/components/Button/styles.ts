@@ -1,13 +1,10 @@
 import { css } from 'styles/stitches.config';
 
 export const button = css({
+  marginTop: '$10',
   color: '$white',
   backgroundColor: '$primary',
   border: '2px solid $primary',
-
-  position: 'absolute',
-  top: '80%',
-  transform: 'translateY(calc(-80% - 80px))',
 
   padding: '$0 $2',
   borderRadius: '$2',
