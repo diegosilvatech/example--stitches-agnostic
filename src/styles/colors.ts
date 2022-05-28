@@ -9,7 +9,7 @@ import {
 
 export const neonColors = {
   text: 'black',
-  background: 'white',
+  background: slate.slate1,
   ...blue,
   ...slate,
   ...sage
@@ -17,7 +17,7 @@ export const neonColors = {
 
 export const darkColors = {
   text: 'white',
-  background: 'black',
+  background: slateDark.slate1,
   ...blueDark,
   ...slateDark,
   ...sageDark
