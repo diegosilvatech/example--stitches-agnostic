@@ -9,8 +9,10 @@ const HomeTemplate = () => {
     <Container>
       <main className={s.main()}>
         <section className={s.section()}>
-          <h3 className={s.title()}>Exemplo Stitches Agnostic</h3>
-          <p className={s.subtitle()}>Feito com Stitches e Radix UI Colors</p>
+          <h3 className={s.title()}>Design Tokens Example</h3>
+          <p className={s.subtitle()}>
+            Feito com Stitches, Radix & Radix UI Colors
+          </p>
 
           <div className={s.themeSwitcherWrapper()}>
             <ThemeSwitcher themeOptions={applicationThemes} />

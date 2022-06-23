@@ -4,7 +4,9 @@ import { violet, blackA } from '@radix-ui/colors';
 
 export const form = css({});
 
-export const root = css({});
+export const root = css({
+  display: 'flex'
+});
 
 export const item = css({
   all: 'unset',
@@ -24,6 +26,7 @@ export const indicator = css({
   width: '100%',
   height: '100%',
   position: 'relative',
+
   '&::after': {
     content: '""',
     display: 'block',
@@ -40,5 +43,6 @@ export const label = css({
   fontSize: 15,
   lineHeight: 1,
   userSelect: 'none',
-  paddingLeft: 15
+  marginLeft: 10,
+  marginRight: 30
 });

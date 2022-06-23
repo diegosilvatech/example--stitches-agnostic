@@ -4,28 +4,28 @@ import * as s from './styles';
 const Authenticator = () => {
   return (
     <TabsPrimitive.Root defaultValue="tab1" className={s.root()}>
-      <TabsPrimitive.List aria-label="Manage your account" className={s.list()}>
+      <TabsPrimitive.List aria-label="Gerencie sua conta" className={s.list()}>
         <TabsPrimitive.Trigger value="tab1" className={s.trigger()}>
-          Account
+          Conta
         </TabsPrimitive.Trigger>
         <TabsPrimitive.Trigger value="tab2" className={s.trigger()}>
-          Password
+          Senha
         </TabsPrimitive.Trigger>
       </TabsPrimitive.List>
 
       <TabsPrimitive.Content value="tab1" className={s.content()}>
         <div className={s.text()}>
-          {`Make changes to your account here. Click save when you're done`}.
+          Faça alterações em sua conta aqui. Clique em salvar quando terminar.
         </div>
         <fieldset className={s.fieldset()}>
           <label htmlFor="name" className={s.label()}>
-            Name
+            Nome
           </label>
           <input id="name" defaultValue="Diego Silva" className={s.input()} />
         </fieldset>
         <fieldset className={s.fieldset()}>
           <label htmlFor="username" className={s.label()}>
-            Username
+            Usuário
           </label>
           <input
             id="username"
@@ -37,32 +37,30 @@ const Authenticator = () => {
           className={s.flex()}
           style={{ marginTop: 20, justifyContent: 'flex-end' }}
         >
-          <button className={s.button({ variant: 'green' })}>
-            Save changes
-          </button>
+          <button className={s.button({ variant: 'green' })}>Salvar</button>
         </div>
       </TabsPrimitive.Content>
 
       <TabsPrimitive.Content value="tab2" className={s.content()}>
         <div className={s.text()}>
-          {`Change your password here. After saving, you'll be logged out.`}.
+          Altere sua senha aqui. Após salvar, você será desconectado.
         </div>
 
         <fieldset className={s.fieldset()}>
           <label htmlFor="currentPassword" className={s.label()}>
-            Current password
+            Senha atual
           </label>
           <input id="currentPassword" type="password" className={s.input()} />
         </fieldset>
         <fieldset className={s.fieldset()}>
           <label htmlFor="newPassword" className={s.label()}>
-            New password
+            Nova senha
           </label>
           <input id="newPassword" type="password" className={s.input()} />
         </fieldset>
         <fieldset className={s.fieldset()}>
           <label htmlFor="confirmPassword" className={s.label()}>
-            Confirm Password
+            Confirme a nova senha
           </label>
           <input id="confirmPassword" type="password" className={s.input()} />
         </fieldset>
@@ -70,9 +68,7 @@ const Authenticator = () => {
           className={s.flex()}
           style={{ marginTop: 20, justifyContent: 'flex-end' }}
         >
-          <button className={s.button({ variant: 'green' })}>
-            Change password
-          </button>
+          <button className={s.button({ variant: 'green' })}>Alterar</button>
         </div>
       </TabsPrimitive.Content>
     </TabsPrimitive.Root>

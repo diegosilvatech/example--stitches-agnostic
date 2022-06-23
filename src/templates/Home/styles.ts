@@ -4,10 +4,14 @@ export const main = css({
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  border: '2px solid red'
 });
 
-export const section = css({});
+export const section = css({
+  // border: '2px solid blue',
+  width: 500
+});
 
 export const title = css({
   color: '$textHighContrast',
@@ -21,7 +25,7 @@ export const subtitle = css({
   fontWeight: 300,
   textAlign: 'center',
   marginTop: '$1',
-  marginBottom: '$10'
+  marginBottom: '$4'
 });
 
 export const inputsWrapper = css({
@@ -37,6 +41,9 @@ export const buttonWrapper = css({
   justifyContent: 'center'
 });
 
-export const themeSwitcherWrapper = css({});
+export const themeSwitcherWrapper = css({
+  // border: '2px solid green',
+  marginBottom: 20
+});
 
 export const authenticatorWrapper = css({});
