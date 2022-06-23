@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 
-import { Container, Button, Radio } from 'components';
+import { Container, Button, Radio, Authenticator } from 'components';
 
 import { applicationThemes } from './applicationThemes';
 
@@ -16,7 +16,7 @@ const HomeTemplate = () => {
           <h3 className={s.title()}>Exemplo Stitches Agnostic</h3>
           <p className={s.subtitle()}>Feito com Stitches e Radix UI Colors</p>
 
-          <div className={s.inputsWrapper()}>
+          {/* <div className={s.inputsWrapper()}>
             {applicationThemes.map((theme) => (
               <Radio
                 key={theme.value}
@@ -28,9 +28,12 @@ const HomeTemplate = () => {
                 defaultChecked={theme.checked}
               />
             ))}
-          </div>
-          <div className={s.buttonWrapper()}>
+          </div> */}
+          {/* <div className={s.buttonWrapper()}>
             <Button label={theme} />
+          </div> */}
+          <div className={s.authenticatorWrapper()}>
+            <Authenticator />
           </div>
         </section>
       </main>
