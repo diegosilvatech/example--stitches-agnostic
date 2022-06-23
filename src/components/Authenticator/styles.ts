@@ -5,7 +5,8 @@ import { violet, mauve, blackA, green } from '@radix-ui/colors';
 export const root = css({
   display: 'flex',
   flexDirection: 'column',
-  boxShadow: `0 2px 10px ${blackA.blackA4}`
+  boxShadow: `0 2px 10px ${blackA.blackA4}`,
+  border: '2px solid $primary'
 });
 
 export const list = css({

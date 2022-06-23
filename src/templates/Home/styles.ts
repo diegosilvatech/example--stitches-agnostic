@@ -37,9 +37,6 @@ export const buttonWrapper = css({
   justifyContent: 'center'
 });
 
-export const authenticatorWrapper = css({
-  // marginTop: '$5',
-  // display: 'flex',
-  // alignItems: 'center',
-  // justifyContent: 'center'
-});
+export const themeSwitcherWrapper = css({});
+
+export const authenticatorWrapper = css({});
