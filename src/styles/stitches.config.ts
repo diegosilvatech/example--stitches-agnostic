@@ -18,6 +18,7 @@ export const {
     fontSizes: neonTokens.fontSizes,
     lineHeights: neonTokens.lineHeights,
     transitions: neonTokens.transitions,
+    fonts: neonTokens.fonts,
     zIndices: {
       base: 10,
       menu: 20,
@@ -39,7 +40,8 @@ export const biorcTheme = createTheme({
   radii: biorcTokens.radii,
   fontSizes: biorcTokens.fontSizes,
   lineHeights: biorcTokens.lineHeights,
-  transitions: biorcTokens.transitions
+  transitions: biorcTokens.transitions,
+  fonts: biorcTokens.fonts
 });
 
 export const lotusTheme = createTheme({

@@ -16,7 +16,8 @@ export const section = css({
 export const title = css({
   color: '$ds-color__text__high-contrast',
   fontSize: '$ds-font-size__huge',
-  textAlign: 'center'
+  textAlign: 'center',
+  fontFamily: '$ds-font-family__heading'
 });
 
 export const subtitle = css({
@@ -25,7 +26,8 @@ export const subtitle = css({
   fontWeight: 300,
   textAlign: 'center',
   marginTop: '$1',
-  marginBottom: '$4'
+  marginBottom: '$4',
+  fontFamily: '$ds-font-family__text'
 });
 
 export const inputsWrapper = css({
@@ -54,7 +56,8 @@ export const themeSwitcherWrapper = css({
 });
 
 export const themeSwitcherLabel = css({
-  color: '$ds-color__background-element'
+  color: '$ds-color__background-element',
+  fontFamily: '$ds-font-family__text'
 });
 
 export const authenticatorWrapper = css({

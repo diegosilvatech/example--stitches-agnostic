@@ -56,6 +56,10 @@ export const biorcTokens = {
     'ds-space-04': '20px',
     'ds-space-05': '25px'
   },
+  fonts: {
+    'ds-font-family__heading': 'Poppins',
+    'ds-font-family__text': 'Poppins'
+  },
   fontSizes: {
     'ds-font-size__small': '13px',
     'ds-font-size__medium': '15px',
