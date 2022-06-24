@@ -6,8 +6,8 @@ export const globalStyles = globalCss({
     padding: 0
   },
   body: {
-    backgroundColor: '$applicationBackground',
-    color: '$text',
+    backgroundColor: '$ds-color__background-app',
+    color: '$ds-color__text__high-contrast',
     fontFamily: "'Poppins', sans-serif"
   },
   button: {

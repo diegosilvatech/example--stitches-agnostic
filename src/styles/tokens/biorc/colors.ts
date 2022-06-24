@@ -16,6 +16,5 @@ export const biorcTokens = {
   colors: { ...colors },
   shadows: {
     smooth: `0 2px 10px ${blackA.blackA5}`
-    // smooth: `0 2px 10px red`
   }
 };

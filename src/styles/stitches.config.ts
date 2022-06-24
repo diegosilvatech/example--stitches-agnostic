@@ -13,25 +13,11 @@ export const {
   theme: {
     colors: neonTokens.colors,
     shadows: neonTokens.shadows,
-    space: neonTokens.space,
-    radii: {
-      0: '4px',
-      1: '8px',
-      2: '16px',
-      rounded: '999px'
-    },
-    fontSizes: {
-      1: '16px',
-      2: '18px',
-      3: '24px',
-      4: '32px',
-      5: '40px',
-      6: '48px'
-    },
-    transitions: {
-      default: '.3s ease',
-      fast: '.1s ease'
-    },
+    space: neonTokens.spaces,
+    radii: neonTokens.radii,
+    fontSizes: neonTokens.fontSizes,
+    lineHeights: neonTokens.lineHeights,
+    transitions: neonTokens.transitions,
     zIndices: {
       base: 10,
       menu: 20,

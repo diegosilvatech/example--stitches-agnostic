@@ -9,19 +9,21 @@ export const main = css({
 });
 
 export const section = css({
-  // border: '2px solid blue',
-  width: 500
+  border: '2px solid red',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center'
 });
 
 export const title = css({
-  color: '$textHighContrast',
-  fontSize: '$5',
+  color: '$ds-color__text__high-contrast',
+  fontSize: '$ds-font-size__huge',
   textAlign: 'center'
 });
 
 export const subtitle = css({
-  color: '$textLowContrast',
-  fontSize: '$2',
+  color: '$ds-color__text__low-contrast',
+  fontSize: '$ds-font-size__large',
   fontWeight: 300,
   textAlign: 'center',
   marginTop: '$1',
@@ -42,8 +44,7 @@ export const buttonWrapper = css({
 });
 
 export const themeSwitcherWrapper = css({
-  // border: '2px solid green',
-  marginBottom: 20
+  marginTop: 40
 });
 
 export const authenticatorWrapper = css({});
