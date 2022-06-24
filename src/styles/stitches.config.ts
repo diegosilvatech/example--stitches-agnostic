@@ -34,10 +34,12 @@ export const {
 
 export const biorcTheme = createTheme({
   colors: biorcTokens.colors,
-  shadows: {
-    button: '0px 4px 40px $colors$shadow',
-    input: '0px 0px 6px $colors$shadow'
-  }
+  shadows: biorcTokens.shadows,
+  space: biorcTokens.spaces,
+  radii: biorcTokens.radii,
+  fontSizes: biorcTokens.fontSizes,
+  lineHeights: biorcTokens.lineHeights,
+  transitions: biorcTokens.transitions
 });
 
 export const lotusTheme = createTheme({

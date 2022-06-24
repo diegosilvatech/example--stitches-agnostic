@@ -26,6 +26,7 @@ export const trigger = css({
   padding: '0 $ds-space-04',
   alignItems: 'center',
   justifyContent: 'center',
+  cursor: 'pointer',
 
   userSelect: 'none',
 
@@ -102,6 +103,7 @@ export const button = css({
   fontSize: '$ds-font-size__medium',
   lineHeight: '$ds-line-height__normal',
   fontWeight: 500,
+  cursor: 'pointer',
 
   variants: {
     variant: {

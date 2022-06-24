@@ -5,11 +5,9 @@ export const main = css({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
-  // border: '2px solid red'
 });
 
 export const section = css({
-  // border: '2px solid red',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
@@ -44,7 +42,19 @@ export const buttonWrapper = css({
 });
 
 export const themeSwitcherWrapper = css({
-  marginTop: 40
+  marginTop: 40,
+  borderRadius: '$ds-radii__small',
+  boxShadow: '$ds-shadow__select__normal',
+  background: 'linear-gradient($ds-color__primary-gradient)',
+  padding: '$ds-space-02 $ds-space-04',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  width: 360
+});
+
+export const themeSwitcherLabel = css({
+  color: '$ds-color__background-element'
 });
 
 export const authenticatorWrapper = css({

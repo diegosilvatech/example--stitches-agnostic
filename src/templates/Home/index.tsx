@@ -1,4 +1,4 @@
-import { Container, Authenticator, ThemeSwitcher } from 'components';
+import { Container, Authenticator, Select } from 'components';
 
 import { applicationThemes } from './applicationThemes';
 
@@ -15,7 +15,8 @@ const HomeTemplate = () => {
           </p>
 
           <div className={s.themeSwitcherWrapper()}>
-            <ThemeSwitcher themeOptions={applicationThemes} />
+            <span className={s.themeSwitcherLabel()}>Empresa:</span>
+            <Select themeOptions={applicationThemes} />
           </div>
           <div className={s.authenticatorWrapper()}>
             <Authenticator />
