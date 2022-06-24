@@ -46,19 +46,22 @@ export const buttonWrapper = css({
 
 export const themeSwitcherWrapper = css({
   marginTop: 40,
-  borderRadius: '$ds-radii__tab',
-  boxShadow: '$ds-shadow__select__normal',
-  background: 'linear-gradient($ds-color__primary-gradient)',
-  padding: '$ds-space-02 $ds-space-04',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: 320
+  width: 360
 });
 
 export const themeSwitcherLabel = css({
   color: '$ds-color__background-element',
-  fontFamily: '$ds-font-family__heading'
+  fontFamily: '$ds-font-family__heading',
+  padding: '$ds-space-02 $ds-space-04',
+  width: '100%',
+  background: 'linear-gradient($ds-color__primary-gradient)',
+  borderRadius: '$ds-radii__switcher-label',
+  boxShadow: '$ds-shadow__select__normal'
+  // marginRight: '$ds-space-01'
+  // border: '2px solid blue',
 });
 
 export const authenticatorWrapper = css({

@@ -76,6 +76,8 @@ export const neonTokens = {
     'ds-radii__medium': '10px',
     'ds-radii__large': '15px',
 
+    'ds-radii__switcher-label': '$ds-radii__large 0 0 $ds-radii__extra-small',
+    'ds-radii__switcher-trigger': '0 $ds-radii__large $ds-radii__large 0',
     'ds-radii__tab':
       '$ds-radii__large $ds-radii__large $ds-radii__large $ds-radii__extra-small',
     'ds-radii__tab-trigger': '$ds-radii__large',
