@@ -10,8 +10,8 @@ export const applicationThemes = [
     checked: false
   },
   {
-    value: 'lotus',
-    label: 'Lotus',
+    value: 'meiFacil',
+    label: 'MEI',
     checked: false
   }
 ];

@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/core';
-import { neonTokens, biorcTokens } from 'styles/tokens';
+import { neonTokens, biorcTokens, meiFacilTokens } from 'styles/tokens';
 
 export const {
   css,
@@ -44,10 +44,13 @@ export const biorcTheme = createTheme({
   fonts: biorcTokens.fonts
 });
 
-export const lotusTheme = createTheme({
-  colors: neonTokens.colors,
-  shadows: {
-    button: '0px 4px 40px $colors$shadow',
-    input: '0px 0px 6px $colors$shadow'
-  }
+export const meiFacilTheme = createTheme({
+  colors: meiFacilTokens.colors,
+  shadows: meiFacilTokens.shadows,
+  space: meiFacilTokens.spaces,
+  radii: meiFacilTokens.radii,
+  fontSizes: meiFacilTokens.fontSizes,
+  lineHeights: meiFacilTokens.lineHeights,
+  transitions: meiFacilTokens.transitions,
+  fonts: meiFacilTokens.fonts
 });

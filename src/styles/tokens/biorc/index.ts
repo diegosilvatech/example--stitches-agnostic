@@ -1,19 +1,19 @@
-import { red, blackA, slate, amber } from '@radix-ui/colors';
+import { orange, blackA, slate, amber } from '@radix-ui/colors';
 
 const colors = {
   'ds-color__primary': '$ds-color__primary-09',
-  'ds-color__primary-01': red.red1,
-  'ds-color__primary-02': red.red2,
-  'ds-color__primary-03': red.red3,
-  'ds-color__primary-04': red.red4,
-  'ds-color__primary-05': red.red5,
-  'ds-color__primary-06': red.red6,
-  'ds-color__primary-07': red.red7,
-  'ds-color__primary-08': red.red8,
-  'ds-color__primary-09': red.red9,
-  'ds-color__primary-10': red.red10,
-  'ds-color__primary-11': red.red11,
-  'ds-color__primary-12': red.red12,
+  'ds-color__primary-01': orange.orange1,
+  'ds-color__primary-02': orange.orange2,
+  'ds-color__primary-03': orange.orange9,
+  'ds-color__primary-04': orange.orange10,
+  'ds-color__primary-05': orange.orange5,
+  'ds-color__primary-06': orange.orange6,
+  'ds-color__primary-07': orange.orange7,
+  'ds-color__primary-08': orange.orange8,
+  'ds-color__primary-09': orange.orange9,
+  'ds-color__primary-10': orange.orange10,
+  'ds-color__primary-11': orange.orange12,
+  'ds-color__primary-12': orange.orange12,
 
   'ds-color__text__low-contrast': slate.slate11,
   'ds-color__text__high-contrast': slate.slate12,

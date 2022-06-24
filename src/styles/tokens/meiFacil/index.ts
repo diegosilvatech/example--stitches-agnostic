@@ -1,18 +1,24 @@
-import { blue, blackA, slate, sky } from '@radix-ui/colors';
+import { blue, yellow, blackA, slate, sky } from '@radix-ui/colors';
 
 const colors = {
   'ds-color__primary': '$ds-color__primary-09',
+  'ds-color__highlight-01': yellow.yellow1,
+  'ds-color__highlight-09': yellow.yellow9,
+  'ds-color__highlight-10': yellow.yellow10,
+  'ds-color__highlight-11': yellow.yellow11,
+  'ds-color__highlight-12': yellow.yellow12,
+
   'ds-color__primary-01': blue.blue1,
   'ds-color__primary-02': blue.blue2,
-  'ds-color__primary-03': blue.blue9,
-  'ds-color__primary-04': blue.blue10,
+  'ds-color__primary-03': '$ds-color__highlight-09',
+  'ds-color__primary-04': '$ds-color__highlight-10',
   'ds-color__primary-05': blue.blue5,
   'ds-color__primary-06': blue.blue6,
   'ds-color__primary-07': blue.blue7,
   'ds-color__primary-08': blue.blue8,
   'ds-color__primary-09': blue.blue9,
   'ds-color__primary-10': blue.blue10,
-  'ds-color__primary-11': blue.blue12,
+  'ds-color__primary-11': yellow.yellow12,
   'ds-color__primary-12': blue.blue12,
 
   'ds-color__text__low-contrast': slate.slate11,
@@ -33,7 +39,7 @@ const colors = {
   'ds-color__primary-gradient': `19deg, $ds-color__primary-09 0%, ${sky.sky9} 100%`
 };
 
-export const neonTokens = {
+export const meiFacilTokens = {
   colors: { ...colors },
   shadows: {
     'ds-shadow__input__normal': `0 0 0 1px ${colors['ds-color__primary-07']}`,
@@ -57,8 +63,8 @@ export const neonTokens = {
     'ds-space-05': '25px'
   },
   fonts: {
-    'ds-font-family__heading': 'Moranga',
-    'ds-font-family__text': 'Epilogue'
+    'ds-font-family__heading': 'Inter',
+    'ds-font-family__text': 'Inter'
   },
   fontSizes: {
     'ds-font-size__small': '13px',
@@ -71,10 +77,10 @@ export const neonTokens = {
     'ds-line-height__large': 1.5
   },
   radii: {
-    'ds-radii__extra-small': '2px',
-    'ds-radii__small': '5px',
-    'ds-radii__medium': '10px',
-    'ds-radii__large': '15px',
+    'ds-radii__extra-small': '0px',
+    'ds-radii__small': '0px',
+    'ds-radii__medium': '0px',
+    'ds-radii__large': '0px',
 
     'ds-radii__switcher-label': '$ds-radii__large 0 0 $ds-radii__extra-small',
     'ds-radii__switcher-trigger': '0 $ds-radii__large $ds-radii__large 0',

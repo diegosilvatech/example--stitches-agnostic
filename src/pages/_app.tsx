@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 
 import { globalStyles } from 'styles/globalStyles';
-import { biorcTheme, lotusTheme } from 'styles/stitches.config';
+import { biorcTheme, meiFacilTheme } from 'styles/stitches.config';
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       value={{
         neon: 'neon',
         biorc: biorcTheme.className,
-        lotus: lotusTheme.className
+        meiFacil: meiFacilTheme.className
       }}
     >
       <Component {...pageProps} />
