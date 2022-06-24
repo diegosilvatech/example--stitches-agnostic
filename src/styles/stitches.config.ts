@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/core';
-import { neonColors, BiorcColors, LotusColors } from 'styles/colors';
+import { neonTokens, biorcTokens } from 'styles/tokens';
 
 export const {
   css,
@@ -11,40 +11,13 @@ export const {
   config
 } = createStitches({
   theme: {
-    colors: {
-      ...neonColors
-    },
-    shadows: {
-      button: `0px 4px 40px $colors$shadow`,
-      input: '0px 0px 6px $colors$shadow'
-    },
-    space: {
-      0: '4px',
-      1: '8px',
-      2: '16px',
-      3: '24px',
-      4: '32px',
-      5: '40px',
-      10: '80px'
-    },
-    radii: {
-      0: '4px',
-      1: '8px',
-      2: '16px',
-      rounded: '999px'
-    },
-    fontSizes: {
-      1: '16px',
-      2: '18px',
-      3: '24px',
-      4: '32px',
-      5: '40px',
-      6: '48px'
-    },
-    transitions: {
-      default: '.3s ease',
-      fast: '.1s ease'
-    },
+    colors: neonTokens.colors,
+    shadows: neonTokens.shadows,
+    space: neonTokens.spaces,
+    radii: neonTokens.radii,
+    fontSizes: neonTokens.fontSizes,
+    lineHeights: neonTokens.lineHeights,
+    transitions: neonTokens.transitions,
     zIndices: {
       base: 10,
       menu: 20,
@@ -60,19 +33,17 @@ export const {
 });
 
 export const biorcTheme = createTheme({
-  colors: {
-    ...BiorcColors
-  },
-  shadows: {
-    button: '0px 4px 40px $colors$shadow',
-    input: '0px 0px 6px $colors$shadow'
-  }
+  colors: biorcTokens.colors,
+  shadows: biorcTokens.shadows,
+  space: biorcTokens.spaces,
+  radii: biorcTokens.radii,
+  fontSizes: biorcTokens.fontSizes,
+  lineHeights: biorcTokens.lineHeights,
+  transitions: biorcTokens.transitions
 });
 
 export const lotusTheme = createTheme({
-  colors: {
-    ...LotusColors
-  },
+  colors: neonTokens.colors,
   shadows: {
     button: '0px 4px 40px $colors$shadow',
     input: '0px 0px 6px $colors$shadow'
