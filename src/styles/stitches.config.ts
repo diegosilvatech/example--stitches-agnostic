@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/core';
-import { neonColors, BiorcColors, LotusColors } from 'styles/colors';
+import { neonTokens, biorcTokens } from 'styles/tokens';
 
 export const {
   css,
@@ -11,13 +11,8 @@ export const {
   config
 } = createStitches({
   theme: {
-    colors: {
-      ...neonColors
-    },
-    shadows: {
-      button: `0px 4px 40px $colors$shadow`,
-      input: '0px 0px 6px $colors$shadow'
-    },
+    colors: neonTokens.colors,
+    shadows: neonTokens.shadows,
     space: {
       0: '4px',
       1: '8px',
@@ -60,9 +55,7 @@ export const {
 });
 
 export const biorcTheme = createTheme({
-  colors: {
-    ...BiorcColors
-  },
+  colors: biorcTokens.colors,
   shadows: {
     button: '0px 4px 40px $colors$shadow',
     input: '0px 0px 6px $colors$shadow'
@@ -70,9 +63,7 @@ export const biorcTheme = createTheme({
 });
 
 export const lotusTheme = createTheme({
-  colors: {
-    ...LotusColors
-  },
+  colors: neonTokens.colors,
   shadows: {
     button: '0px 4px 40px $colors$shadow',
     input: '0px 0px 6px $colors$shadow'

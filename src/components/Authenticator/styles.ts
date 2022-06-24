@@ -1,24 +1,22 @@
 import { css } from 'styles/stitches.config';
 
-import { violet, mauve, blackA, green } from '@radix-ui/colors';
-
 export const root = css({
   display: 'flex',
   flexDirection: 'column',
-  boxShadow: `0 2px 10px ${blackA.blackA4}`
-  // border: '2px solid $primary'
+  boxShadow: '$ds-shadow__tab-root'
 });
 
 export const list = css({
   flexShrink: 0,
   display: 'flex',
-  borderBottom: `1px solid ${mauve.mauve6}`
+  borderBottom: '1px solid $ds-color__gray-06'
 });
 
 export const trigger = css({
   all: 'unset',
   fontFamily: 'inherit',
-  backgroundColor: 'white',
+  color: '$ds-color__gray-11',
+  backgroundColor: '$ds-color__background',
   padding: '0 20px',
   height: 45,
   flex: 1,
@@ -27,31 +25,33 @@ export const trigger = css({
   justifyContent: 'center',
   fontSize: 15,
   lineHeight: 1,
-  color: mauve.mauve11,
   userSelect: 'none',
   '&:first-child': { borderTopLeftRadius: 6 },
   '&:last-child': { borderTopRightRadius: 6 },
-  '&:hover': { color: violet.violet11 },
+  '&:hover': { color: '$ds-color__primary-11' },
   '&[data-state="active"]': {
-    color: violet.violet11,
-    boxShadow: 'inset 0 -1px 0 0 currentColor, 0 1px 0 0 currentColor'
+    color: '$ds-color__primary-09',
+    boxShadow: '$ds-shadow__tab__active'
   },
-  '&:focus': { position: 'relative', boxShadow: `0 0 0 2px black` }
+  '&:focus': {
+    position: 'relative',
+    boxShadow: '$ds-shadow__tab__active__focused'
+  }
 });
 
 export const content = css({
   flexGrow: 1,
   padding: 20,
-  backgroundColor: 'white',
+  backgroundColor: '$ds-color__background',
   borderBottomLeftRadius: 6,
   borderBottomRightRadius: 6,
   outline: 'none',
-  '&:focus': { boxShadow: `0 0 0 2px black` }
+  '&:focus': { boxShadow: '$ds-shadow__tab-content__focused' }
 });
 
 export const text = css({
   marginBottom: 20,
-  color: mauve.mauve11,
+  color: '$ds-color__gray-11',
   fontSize: 15,
   lineHeight: 1.5
 });
@@ -69,7 +69,7 @@ export const label = css({
   fontSize: 13,
   lineHeight: 1,
   marginBottom: 10,
-  color: violet.violet12,
+  color: '$ds-color__primary-12',
   display: 'block'
 });
 
@@ -80,10 +80,10 @@ export const input = css({
   padding: '0 10px',
   fontSize: 15,
   lineHeight: 1,
-  color: violet.violet11,
-  boxShadow: `0 0 0 1px ${violet.violet7}`,
+  color: '$ds-color__primary-11',
+  boxShadow: '$ds-shadow__input__normal',
   height: 35,
-  '&:focus': { boxShadow: `0 0 0 2px ${violet.violet8}` }
+  '&:focus': { boxShadow: '$ds-shadow__input__focused' }
 });
 
 export const flex = css({ display: 'flex' });
@@ -102,23 +102,22 @@ export const button = css({
 
   variants: {
     variant: {
-      violet: {
-        backgroundColor: 'white',
-        color: violet.violet11,
-        boxShadow: `0 2px 10px ${blackA.blackA7}`,
-        '&:hover': { backgroundColor: mauve.mauve3 },
-        '&:focus': { boxShadow: `0 0 0 2px black` }
+      secondary: {
+        backgroundColor: '$ds-color__background',
+        color: '$ds-color__primary-11',
+        boxShadow: '$ds-shadow__button__normal',
+        '&:focus': { boxShadow: '$ds-shadow__button__focused' }
       },
-      green: {
-        backgroundColor: green.green4,
-        color: green.green11,
-        '&:hover': { backgroundColor: green.green5 },
-        '&:focus': { boxShadow: `0 0 0 2px ${green.green7}` }
+      primary: {
+        backgroundColor: '$ds-color__primary-03',
+        color: '$ds-color__primary-11',
+        '&:hover': { backgroundColor: '$ds-color__primary-04' },
+        '&:focus': { boxShadow: '$ds-shadow__button__focused' }
       }
     }
   },
 
   defaultVariants: {
-    variant: 'violet'
+    variant: 'primary'
   }
 });

@@ -37,7 +37,7 @@ const Authenticator = () => {
           className={s.flex()}
           style={{ marginTop: 20, justifyContent: 'flex-end' }}
         >
-          <button className={s.button({ variant: 'green' })}>Salvar</button>
+          <button className={s.button({ variant: 'primary' })}>Salvar</button>
         </div>
       </TabsPrimitive.Content>
 
@@ -68,7 +68,7 @@ const Authenticator = () => {
           className={s.flex()}
           style={{ marginTop: 20, justifyContent: 'flex-end' }}
         >
-          <button className={s.button({ variant: 'green' })}>Alterar</button>
+          <button className={s.button({ variant: 'primary' })}>Alterar</button>
         </div>
       </TabsPrimitive.Content>
     </TabsPrimitive.Root>
