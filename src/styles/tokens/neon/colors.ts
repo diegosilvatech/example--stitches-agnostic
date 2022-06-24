@@ -48,8 +48,8 @@ export const neonTokens = {
   fontSizes: {
     'ds-font-size__small': '13px',
     'ds-font-size__medium': '15px',
-    'ds-font-size__large': '18px',
-    'ds-font-size__huge': '49px'
+    'ds-font-size__large': '25px',
+    'ds-font-size__huge': '60px'
   },
   lineHeights: {
     'ds-line-height__normal': 1,

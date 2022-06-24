@@ -4,12 +4,12 @@ export const main = css({
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
-  border: '2px solid red'
+  alignItems: 'center'
+  // border: '2px solid red'
 });
 
 export const section = css({
-  border: '2px solid red',
+  // border: '2px solid red',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
@@ -47,4 +47,6 @@ export const themeSwitcherWrapper = css({
   marginTop: 40
 });
 
-export const authenticatorWrapper = css({});
+export const authenticatorWrapper = css({
+  marginTop: 20
+});
