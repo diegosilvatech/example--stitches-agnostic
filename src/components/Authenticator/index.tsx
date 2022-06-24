@@ -29,7 +29,7 @@ const Authenticator = () => {
           </label>
           <input
             id="username"
-            defaultValue="@diegosilva"
+            defaultValue="@diegosilvatech"
             className={s.input()}
           />
         </fieldset>

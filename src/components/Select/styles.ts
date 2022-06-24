@@ -13,7 +13,7 @@ export const trigger = css({
   padding: '0 15px',
   fontSize: '$ds-font-size__small',
   lineHeight: '$ds-line-height__normal',
-  height: 45,
+  height: 40,
   gap: '$ds-space-01',
   backgroundColor: '$ds-color__background-element',
   color: '$ds-color__primary-09',
