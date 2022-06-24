@@ -4,7 +4,7 @@ export const root = css({
   display: 'flex',
   flexDirection: 'column',
   boxShadow: '$ds-shadow__tab-root',
-  maxWidth: 400
+  maxWidth: 360
 });
 
 export const list = css({

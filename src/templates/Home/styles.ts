@@ -3,11 +3,11 @@ import { css } from 'styles/stitches.config';
 export const main = css({
   height: '100vh',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center'
+  justifyContent: 'center'
 });
 
 export const section = css({
+  padding: '100px 0',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center'
@@ -50,7 +50,7 @@ export const themeSwitcherWrapper = css({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: 360
+  width: 320
 });
 
 export const themeSwitcherLabel = css({
