@@ -1,19 +1,19 @@
-import { red, blackA, slate, amber } from '@radix-ui/colors';
+import { blue, blackA, slate, sky } from '@radix-ui/colors';
 
 const colors = {
   'ds-color__primary': '$ds-color__primary-09',
-  'ds-color__primary-01': red.red1,
-  'ds-color__primary-02': red.red2,
-  'ds-color__primary-03': red.red3,
-  'ds-color__primary-04': red.red4,
-  'ds-color__primary-05': red.red5,
-  'ds-color__primary-06': red.red6,
-  'ds-color__primary-07': red.red7,
-  'ds-color__primary-08': red.red8,
-  'ds-color__primary-09': red.red9,
-  'ds-color__primary-10': red.red10,
-  'ds-color__primary-11': red.red11,
-  'ds-color__primary-12': red.red12,
+  'ds-color__primary-01': blue.blue1,
+  'ds-color__primary-02': blue.blue2,
+  'ds-color__primary-03': blue.blue3,
+  'ds-color__primary-04': blue.blue4,
+  'ds-color__primary-05': blue.blue5,
+  'ds-color__primary-06': blue.blue6,
+  'ds-color__primary-07': blue.blue7,
+  'ds-color__primary-08': blue.blue8,
+  'ds-color__primary-09': blue.blue9,
+  'ds-color__primary-10': blue.blue10,
+  'ds-color__primary-11': blue.blue11,
+  'ds-color__primary-12': blue.blue12,
 
   'ds-color__text__low-contrast': slate.slate11,
   'ds-color__text__high-contrast': slate.slate12,
@@ -30,10 +30,10 @@ const colors = {
   'ds-color__blackA-07': blackA.blackA7,
   'ds-color__blackA-12': blackA.blackA12,
 
-  'ds-color__primary-gradient': `19deg, $ds-color__primary-09 0%, ${amber.amber9} 100%`
+  'ds-color__primary-gradient': `19deg, $ds-color__primary-09 0%, ${sky.sky9} 100%`
 };
 
-export const biorcTokens = {
+export const neonTokens = {
   colors: { ...colors },
   shadows: {
     'ds-shadow__input__normal': `0 0 0 1px ${colors['ds-color__primary-07']}`,
@@ -57,8 +57,8 @@ export const biorcTokens = {
     'ds-space-05': '25px'
   },
   fonts: {
-    'ds-font-family__heading': 'Poppins',
-    'ds-font-family__text': 'Poppins'
+    'ds-font-family__heading': 'Moranga',
+    'ds-font-family__text': 'Epilogue'
   },
   fontSizes: {
     'ds-font-size__small': '13px',
@@ -71,7 +71,15 @@ export const biorcTokens = {
     'ds-line-height__large': 1.5
   },
   radii: {
-    'ds-radii__small': '5px'
+    'ds-radii__extra-small': '2px',
+    'ds-radii__small': '5px',
+    'ds-radii__medium': '10px',
+    'ds-radii__large': '15px',
+
+    'ds-radii__tab':
+      '$ds-radii__large $ds-radii__large $ds-radii__large $ds-radii__extra-small',
+    'ds-radii__tab-trigger': '$ds-radii__large',
+    'ds-radii__tab-content': '0 0 $ds-radii__large $ds-radii__extra-small'
   },
   transitions: {
     'ds-transition__default': '.3s ease',

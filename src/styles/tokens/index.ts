@@ -1,4 +1,4 @@
-import { neonTokens } from './neon/colors';
-import { biorcTokens } from './biorc/colors';
+import { neonTokens } from './neon';
+import { biorcTokens } from './biorc';
 
 export { neonTokens, biorcTokens };

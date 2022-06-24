@@ -4,7 +4,8 @@ export const root = css({
   display: 'flex',
   flexDirection: 'column',
   boxShadow: '$ds-shadow__tab-root',
-  maxWidth: 360
+  maxWidth: 360,
+  borderRadius: '$ds-radii__tab'
 });
 
 export const list = css({
@@ -30,8 +31,8 @@ export const trigger = css({
 
   userSelect: 'none',
 
-  '&:first-child': { borderTopLeftRadius: '$ds-radii__small' },
-  '&:last-child': { borderTopRightRadius: '$ds-radii__small' },
+  '&:first-child': { borderTopLeftRadius: '$ds-radii__tab-trigger' },
+  '&:last-child': { borderTopRightRadius: '$ds-radii__tab-trigger' },
   '&:hover': { color: '$ds-color__primary-11' },
   '&[data-state="active"]': {
     color: '$ds-color__primary',
@@ -49,6 +50,7 @@ export const content = css({
   padding: '$ds-space-04',
   borderBottomLeftRadius: '$ds-radii__small',
   borderBottomRightRadius: '$ds-radii__small',
+  borderRadius: '$ds-radii__tab-content',
   outline: 'none',
   '&:focus': { boxShadow: '$ds-shadow__tab-content__focused' }
 });

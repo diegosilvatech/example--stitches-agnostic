@@ -45,7 +45,7 @@ export const buttonWrapper = css({
 
 export const themeSwitcherWrapper = css({
   marginTop: 40,
-  borderRadius: '$ds-radii__small',
+  borderRadius: '$ds-radii__tab',
   boxShadow: '$ds-shadow__select__normal',
   background: 'linear-gradient($ds-color__primary-gradient)',
   padding: '$ds-space-02 $ds-space-04',
@@ -57,7 +57,7 @@ export const themeSwitcherWrapper = css({
 
 export const themeSwitcherLabel = css({
   color: '$ds-color__background-element',
-  fontFamily: '$ds-font-family__text'
+  fontFamily: '$ds-font-family__heading'
 });
 
 export const authenticatorWrapper = css({

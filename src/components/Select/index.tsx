@@ -36,9 +36,6 @@ const Select = ({ themeOptions }: SelectProps) => {
         </SelectPrimitive.ScrollUpButton>
         <SelectPrimitive.Viewport className={s.viewport()}>
           <SelectPrimitive.Group>
-            <SelectPrimitive.Label className={s.label()}>
-              Themes
-            </SelectPrimitive.Label>
             {themeOptions.map((theme) => (
               <SelectPrimitive.Item
                 key={theme.value}
