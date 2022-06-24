@@ -21,7 +21,8 @@ export const trigger = css({
 
   boxShadow: '$ds-shadow__select__normal',
   '&:hover': { backgroundColor: '$ds-color__primary-02' },
-  '&:focus': { boxShadow: '$ds-shadow__select__focused' }
+  '&:focus': { boxShadow: '$ds-shadow__select__focused' },
+  fontFamily: '$ds-font-family__text'
 });
 
 export const content = css({
@@ -48,6 +49,7 @@ export const item = css({
   position: 'relative',
   userSelect: 'none',
   cursor: 'pointer',
+  fontFamily: '$ds-font-family__text',
 
   '&[data-disabled]': {
     color: '$ds-color__gray-08',

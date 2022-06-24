@@ -11,7 +11,7 @@ const HomeTemplate = () => {
         <section className={s.section()}>
           <h3 className={s.title()}>Design Tokens Example</h3>
           <p className={s.subtitle()}>
-            Feito com Stitches, Radix & Radix UI Colors
+            Feito com Radix Primitives, Radix UI Colors & Stitches
           </p>
 
           <div className={s.themeSwitcherWrapper()}>

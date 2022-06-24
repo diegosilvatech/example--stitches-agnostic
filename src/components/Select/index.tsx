@@ -21,8 +21,6 @@ type SelectProps = {
 const Select = ({ themeOptions }: SelectProps) => {
   const { theme = 'neon', setTheme } = useTheme();
 
-  console.log({ theme });
-
   return (
     <SelectPrimitive.Root value={theme} onValueChange={setTheme}>
       <SelectPrimitive.Trigger aria-label="Food" className={s.trigger()}>

@@ -18,7 +18,7 @@ export const trigger = css({
   color: '$ds-color__gray-11',
   backgroundColor: '$ds-color__background-element',
   fontSize: '$ds-font-size__medium',
-  fontFamily: 'inherit',
+  fontFamily: '$ds-font-family__heading',
   lineHeight: '$ds-line-height__normal',
   display: 'flex',
   flex: 1,
@@ -57,7 +57,8 @@ export const text = css({
   marginBottom: '$ds-space-04',
   color: '$ds-color__gray-11',
   fontSize: '$ds-font-size__medium',
-  lineHeight: '$ds-line-height__large'
+  lineHeight: '$ds-line-height__large',
+  fontFamily: '$ds-font-family__text'
 });
 
 export const fieldset = css({
@@ -74,7 +75,8 @@ export const label = css({
   fontSize: '$ds-font-size__small',
   lineHeight: '$ds-line-height__normal',
   marginBottom: '$ds-space-02',
-  display: 'block'
+  display: 'block',
+  fontFamily: '$ds-font-family__text'
 });
 
 export const input = css({
@@ -87,6 +89,7 @@ export const input = css({
   fontSize: '$ds-font-size__medium',
   lineHeight: '$ds-line-height__normal',
   boxShadow: '$ds-shadow__input__normal',
+  fontFamily: '$ds-font-family__text',
   '&:focus': { boxShadow: '$ds-shadow__input__focused' }
 });
 
@@ -104,6 +107,7 @@ export const button = css({
   lineHeight: '$ds-line-height__normal',
   fontWeight: 500,
   cursor: 'pointer',
+  fontFamily: '$ds-font-family__text',
 
   variants: {
     variant: {
