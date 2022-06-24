@@ -17,6 +17,7 @@ export const title = css({
   color: '$ds-color__text__high-contrast',
   fontSize: '$ds-font-size__huge',
   textAlign: 'center',
+  lineHeight: 1.2,
   fontFamily: '$ds-font-family__heading'
 });
 
