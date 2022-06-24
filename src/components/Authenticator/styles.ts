@@ -17,7 +17,7 @@ export const trigger = css({
   fontFamily: 'inherit',
   color: '$ds-color__gray-11',
   backgroundColor: '$ds-color__background',
-  padding: '0 20px',
+  padding: '0 $ds-space-04',
   height: 45,
   flex: 1,
   display: 'flex',
@@ -41,7 +41,7 @@ export const trigger = css({
 
 export const content = css({
   flexGrow: 1,
-  padding: 20,
+  padding: '$ds-space-04',
   backgroundColor: '$ds-color__background',
   borderBottomLeftRadius: 6,
   borderBottomRightRadius: 6,
@@ -50,7 +50,7 @@ export const content = css({
 });
 
 export const text = css({
-  marginBottom: 20,
+  marginBottom: '$ds-space-04',
   color: '$ds-color__gray-11',
   fontSize: 15,
   lineHeight: 1.5
@@ -58,7 +58,7 @@ export const text = css({
 
 export const fieldset = css({
   all: 'unset',
-  marginBottom: 15,
+  marginBottom: '$ds-space-03',
   width: '100%',
   display: 'flex',
   flexDirection: 'column',
@@ -68,7 +68,7 @@ export const fieldset = css({
 export const label = css({
   fontSize: 13,
   lineHeight: 1,
-  marginBottom: 10,
+  marginBottom: '$ds-space-02',
   color: '$ds-color__primary-12',
   display: 'block'
 });
@@ -94,7 +94,7 @@ export const button = css({
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: 4,
-  padding: '0 15px',
+  padding: '0 $ds-space-04',
   fontSize: 15,
   lineHeight: 1,
   fontWeight: 500,

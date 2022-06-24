@@ -33,5 +33,12 @@ export const neonTokens = {
     'ds-shadow__tab-content__focused': `0px 0px 0px 2px ${colors['ds-color__primary-11']}`,
 
     'ds-shadow__button__focused': `0 0 0 2px ${colors['ds-color__primary-07']}`
+  },
+  space: {
+    'ds-space-00': '',
+    'ds-space-01': '5px',
+    'ds-space-02': '10px',
+    'ds-space-03': '15px',
+    'ds-space-04': '20px'
   }
 };

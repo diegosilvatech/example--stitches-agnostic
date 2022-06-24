@@ -13,15 +13,7 @@ export const {
   theme: {
     colors: neonTokens.colors,
     shadows: neonTokens.shadows,
-    space: {
-      0: '4px',
-      1: '8px',
-      2: '16px',
-      3: '24px',
-      4: '32px',
-      5: '40px',
-      10: '80px'
-    },
+    space: neonTokens.space,
     radii: {
       0: '4px',
       1: '8px',
